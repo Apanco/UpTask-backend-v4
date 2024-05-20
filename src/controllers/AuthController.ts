@@ -98,7 +98,7 @@ export class AuthController {
             }
 
             const token = generateJWT({id: user._id})
-
+            
             res.send(token)
 
         } catch (error) {
